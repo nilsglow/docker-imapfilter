@@ -19,3 +19,6 @@ apk del alpine-sdk
 cd ..
 rm -r imapfilter-$VERSION
 rm $TAG.zip
+
+adduser -h /home/imapfilter -D -s /sbin/nologin -G nobody imapfilter
+mkdir /home/imapfilter/.imapfilter && chown imapfilter:nobody /home/imapfilter/.imapfilter
