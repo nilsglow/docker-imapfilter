@@ -1,6 +1,6 @@
 #!/bin/sh
 apk add --no-cache \
-    openssl openssl-dev make lua5.3 lua-dev pcre pcre-dev alpine-sdk
+    openssl openssl-dev make lua5.3 lua-dev lua5.1-socket pcre pcre-dev alpine-sdk
 
 
 wget https://github.com/lefcha/imapfilter/archive/master.zip
