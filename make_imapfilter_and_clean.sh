@@ -2,10 +2,14 @@
 apk add --no-cache \
     openssl openssl-dev make lua5.3 lua-dev lua5.1-socket pcre pcre-dev alpine-sdk
 
+#VERSION=master
+#TAG=master
+VERSION=2.5.2
+TAG=v$VERSION
 
-wget https://github.com/lefcha/imapfilter/archive/master.zip
-unzip master.zip
-cd imapfilter-master
+wget https://github.com/lefcha/imapfilter/archive/$TAG.zip
+unzip $TAG.zip
+cd imapfilter-$VERSION
 
 make all
 make install
@@ -13,5 +17,5 @@ make install
 apk del alpine-sdk
 
 cd ..
-rm -r imapfilter-master
-rm master.zip
+rm -r imapfilter-$VERSION
+rm $TAG.zip
