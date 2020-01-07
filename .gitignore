@@ -3,3 +3,4 @@
 default_config.lua
 start_local.sh
 build_local.sh
+*.swp
