@@ -4,7 +4,7 @@ apk add --no-cache \
 
 #VERSION=master
 #TAG=master
-VERSION=2.5.2
+VERSION=2.6.16
 TAG=v$VERSION
 
 wget https://github.com/lefcha/imapfilter/archive/$TAG.zip
